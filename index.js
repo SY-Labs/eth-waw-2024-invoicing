@@ -44,8 +44,6 @@ async function update(requestId, contracts) {
     "contracts": contracts
   }
   
-  console.log(JSON.stringify(payload));
-  console.log(`https://159.69.185.109/events/${requestId}`);
   const options = {
     headers: {
       'Accept': 'application/json',
@@ -56,7 +54,6 @@ async function update(requestId, contracts) {
  }
  
   const response = await fetch(`https://159.69.185.109/events/${requestId}`, options);
-  console.log(await response.json());
 }
 
 async function main2() {
