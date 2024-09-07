@@ -5,6 +5,11 @@
 				"internalType": "uint256",
 				"name": "_end",
 				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "stakingAddress",
+				"type": "address"
 			}
 		],
 		"stateMutability": "nonpayable",
@@ -218,6 +223,19 @@
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "stakePool",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -231,6 +249,19 @@
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "stakingAddress",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
 			}
 		],
 		"stateMutability": "view",
@@ -261,5 +292,9 @@
 		],
 		"stateMutability": "view",
 		"type": "function"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "receive"
 	}
 ]
